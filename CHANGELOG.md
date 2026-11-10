@@ -5,6 +5,24 @@ All notable changes to LLMKube will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [0.10.18](https://github.com/defilantech/LLMKube/compare/v0.10.17...v0.10.18) (2026-11-10)
+
+
+### Features
+
+* **chart:** add relabelings and metricRelabelings to the PodMonitors ([#2467](https://github.com/defilantech/LLMKube/issues/2467)) ([d0ae4f3](https://github.com/defilantech/LLMKube/commit/d0ae4f35b1b75c6146f93cd34effae4a09196811))
+* **inferenceservice:** per-service size for the model cache ([#2469](https://github.com/defilantech/LLMKube/issues/2469)) ([ec18285](https://github.com/defilantech/LLMKube/commit/ec182857747916b6a7216c3fd2bafb486aa8ab36))
+* **metal-relay:** preserve client source IP through the relay ([#2483](https://github.com/defilantech/LLMKube/issues/2483)) ([3892c27](https://github.com/defilantech/LLMKube/commit/3892c277e229729309405b76d066383c54320219))
+* **router:** gate router readiness on required local listeners ([#2468](https://github.com/defilantech/LLMKube/issues/2468)) ([033ca80](https://github.com/defilantech/LLMKube/commit/033ca80d181c45f215080679c444848266850e47))
+
+
+### Bug Fixes
+
+* avoid stale namespace reads in quota admission ([#2471](https://github.com/defilantech/LLMKube/issues/2471)) ([12af4c4](https://github.com/defilantech/LLMKube/commit/12af4c4da28300b5281e3d590c896ef0ef1cf99d))
+* **catalog:** correct llama-3.3-70b default context (fixes [#2477](https://github.com/defilantech/LLMKube/issues/2477)) ([#2484](https://github.com/defilantech/LLMKube/issues/2484)) ([2c1dd79](https://github.com/defilantech/LLMKube/commit/2c1dd79d8185287a8bb07a22028b1f80a39bb618))
+* **cli:** default qwen-2.5-14b to a 16K context within its trained 32K ([#2478](https://github.com/defilantech/LLMKube/issues/2478)) ([0dc14c2](https://github.com/defilantech/LLMKube/commit/0dc14c292114d4742c1e6b073150204ec262872d))
+* warn about unmatched model file patterns ([#2472](https://github.com/defilantech/LLMKube/issues/2472)) ([fb75656](https://github.com/defilantech/LLMKube/commit/fb756566b7f0a13ce0d75de3006d05adbd7422b8))
+
 ## [0.10.17](https://github.com/defilantech/LLMKube/compare/v0.10.16...v0.10.17) (2026-11-06)
 
 
